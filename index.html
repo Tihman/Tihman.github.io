@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>K-Means</title>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>«Сжатие цветов изображения методом кластеризации K-means»</h1>
+          <div id="fileinput">
+           <p id="clustermessage">Выберите количество кластеров: </p>
+            <input id="clust" type="number" value="2" step="1" min="1" max="10">  
+
+           <p id="filemessage">Выберите изображение: </p>
+            <input id="filemes" type='file' accept='image/*' onchange='openFile(event)'>
+          </div>  
+        <div style="width: 100%;">
+            <div id='image'>Исходное изображение: </div>       
+            <div id='rimage'> Сжатое изображение: </div> 
+            <div id='palette'>Палитра: </div>
+        </div>
+        <div id="reloadbutton">
+            <button onclick="location.reload()">Загрузить другую фотографию</button>
+        </div>            
+    </body>
+</html>
